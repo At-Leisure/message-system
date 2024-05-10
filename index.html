@@ -8,6 +8,7 @@
 <body>
     <div id="gitalk-container"></div>
     <script>
+        console.log(location.herf);
         var gitalk = new Gitalk({
             clientID: 'Ov23li9k4GjjOmfjFuDe',
             clientSecret: '5d7bfdefa82effde66da10b2af85b5eed56885e8',
@@ -16,7 +17,7 @@
             owner: 'At-Leisure',
             proxy: "https://strong-caramel-969805.netlify.app/github_access_token",
             admin: ['At-Leisur'],
-            id: '',      // Ensure uniqueness and len
+            //id: '',      // Ensure uniqueness and len
             labels: md5(location.herf),
             distractionFreeMode: false,  // Facebook-like distraction
         })
@@ -31,6 +32,6 @@
         //     //distractionFreeMode: false // 专注模式
         // })
 
-        gitalk.render('gitalk-container')
+        gitalk.render('gitalk-container');
     </script>
 </body>
